@@ -96,22 +96,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_cor"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_color"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_margin="16dp"
-        android:hint="@string/label_cor"
+        android:text="@string/label_cor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/til_empresa">
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/til_empresa"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_confirmar"
@@ -121,6 +114,8 @@
         android:text="@string/label_confirmar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/til_cor"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn_color"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
