@@ -38,14 +38,13 @@ class AddBusinessCardActivity : AppCompatActivity() {
 
         binding.btnColor.setOnClickListener { _ ->
             MaterialColorPickerDialog
-                .Builder(this)        					// Pass Activity Instance
-                .setTitle("Pick Theme")           		// Default "Choose Color"
+                .Builder(this)        			// Pass Activity Instance
+                .setTitle("Choose Color")           	// Default "Choose Color"
                 .setColorShape(ColorShape.SQAURE)   	// Default ColorShape.CIRCLE
                 .setColorSwatch(ColorSwatch._300)   	// Default ColorSwatch._500
                 .setDefaultColor(mDefaultColor) 		// Pass Default Color
                 .setColorListener { color, colorHex ->
                     mDefaultColor = colorHex
-
                 }
                 .show()
         }
@@ -63,5 +62,6 @@ class AddBusinessCardActivity : AppCompatActivity() {
             finish()
         }
     }
+
 
 }
